@@ -10,8 +10,23 @@
     <main>
         <h1>Testes JavaScript</h1>
         <div class="container">
+            <form>
+                <div>
+                    <label 
+                    class="form-label" 
+                    for="nome">Digite seu nome:</label>
+                    <input 
+                    class="form-control p3" 
+                    type="text"
+                    id="nome">
+                </div>
+                <button class="btn btn-primary" onclick="imprimirNome()">Enviar dados</button>
+            </form>
+            <!-- Comentário HTML-->
             <script>
-                console.log("Olá Mundo!")
+                function imprimirNome() {
+                    window.alert("Seu formulário doi enviado")
+                }
             </script>
         </div>
     </main>
