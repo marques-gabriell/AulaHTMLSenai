@@ -1,37 +1,33 @@
 function imprimirNome() {
-    window.alert("Usuário cadastrado")
+    window.alert("Profissional cadastrado")
     let nome = document.getElementById("nome").value;
-
-    console.log("Seu nome é: "+ nome)
-
-    alert("Aluno cadastrado!\n\nNome do aluno: "+ nome)
-
-
-    
     let idade = document.getElementById("idade").value;
-
-    console.log("Sua idade é: "+ idade)
-
-    alert("Idade do funcionário: "+ idade)
-
-
     let cargo = document.getElementById("cargo").value;
-
-    console.log("Seu cargo: "+ cargo)
-
-    alert("Cargo do funcionário: "+ cargo)
-
-
     let departamento = document.getElementById("departamento").value;
-
-    console.log("Seu departamento é: "+ departamento)
-
-    alert("Departamento funcionário: "+ departamento)
+    let acesso = document.getElementById("acesso").checked;
 
 
-    let acesso = document.getElementById("acesso").value;
+    console.log("=====CRACHÁ VIRTUAL=====")
+    console.log("Nome: ", nome);
+    console.log("Idade: ", idade);
+    console.log("Cargo: ", cargo);
+    console.log("Departamento: ", departamento);
+    console.log("Tem acesso restrito? ", acesso);
 
-    console.log("Tem acesso Restrito: "+ acesso)
 
-    alert("Tem acesso restrito: "+ acesso)
+
+    alert(
+        "Crachá Virtual!\n\n" + 
+        "Nome: "+ nome + "\n" +
+        "Idade: " + idade + "\n" +
+        "Cargo: " + cargo + "\n" +
+        "Departamento: " + departamento + "\n" +
+        "Acesso Restrito: " + acesso
+    );
+
+    if (acesso){ /// se (verdadeiro)
+        window.location.href = "pages/gerente.html"
+    } else {
+        window.location.href = "pages/funcionario.html"
     }
+}
