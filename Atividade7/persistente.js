@@ -1,5 +1,14 @@
 function salvarNome(){
-    let nome = document.getElementById("texto-inserido").ariaValueMax;
+    let valorDigitado = document.getElementById("texto-inserido").value;
+    let idadeDigitada = 22
 
-    console.log(nome)
+    let objetoNome = {
+        nome: valorDigitado
+        idade: idadeDigitada
+    };
+
+    let textoJSON = JSON.stringify(objetoNome)
+    localStorage.setItem("dadoNome", textoJSON)
+
+    document.getElementById("nome-salvo").innerText = valorDigitado;
 }
