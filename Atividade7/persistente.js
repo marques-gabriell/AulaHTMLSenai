@@ -2,8 +2,8 @@ function salvarNome(){
     let valorDigitado = document.getElementById("texto-inserido").value;
     let idadeDigitada = 22
 
-    let objetoNome = {
-        nome: valorDigitado
+    let objetoNome = { 
+        nome: valorDigitado,
         idade: idadeDigitada
     };
 
