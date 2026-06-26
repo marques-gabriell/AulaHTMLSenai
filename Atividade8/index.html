@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes funções</title>
 </head>
-<body>
+<body style="background-color: antiquewhite;">
     <main>
         <h1>Teste de funções matemáticas</h1>
-        <h2>Soma</h2>
+        <h2>Operações</h2>
         <label for="primeiro-numero">Digite o primeiro numero:</label>
         <input type="number" id="primeiro-numero">
         <br>
@@ -16,12 +16,29 @@
         <input type="number" id="segundo-numero">
         <br>
         <button onclick="soma()">SOMA</button>
-        <button onclick="subtraçao()">SUBTRAÇÃO</button>
-        <button onclick="multiplicação()">MULTIPLICAÇÃO</button>
+        <button onclick="subtracao()">SUBTRAÇÃO</button>
+        <button onclick="multiplicacao()">MULTIPLICAÇÃO</button>
         <button onclick="divisao()">DIVISÃO</button>
         <br>
         <p>Seu resultado é: <strong id="resultado"></strong></p>
+        <br>
+        <br>
+        <button onclick="apagarLocalStorage()">Apagar histórico</button>
         <script src="js/funcoes.js"></script>
+
+    <DIV>    
+        <h1>Calculo de imposto de importação</h1>
+        <h2>Operações</h2>
+        <label for="terceiro-numero">Digite o valor do produto:</label>
+        <input type="number" id="terceiro-numero">
+        <br>
+        <br>
+        <button onclick="calculo()">CALCULAR IMPOSTO</button>
+        <br>
+        <p>Valor total com imposto: <strong id="resultado_total"></strong></p>
+        <p>Valor do imposto: <strong id="resultado_imposto"></strong></p>
+    </DIV>
+            
     </main>
 </body>
 </html>
