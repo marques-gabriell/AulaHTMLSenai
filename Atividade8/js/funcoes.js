@@ -55,7 +55,7 @@ function calculo() {
     
 
     document.getElementById("resultado_imposto").innerText = resultado;
-    document.getElementById("resultado_total").innerText = resultado + terceiroNumero;
+    document.getElementById("resultado_total").innerText = resultado * terceiroNumero;
 
     salvarHistorico("20%", terceiroNumero, resultado);
 }
